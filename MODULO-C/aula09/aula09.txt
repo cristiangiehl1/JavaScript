@@ -1,0 +1,4 @@
+DOM (Document Object Model)
+
+Toda classe é representada por '.' (ponto)
+Todo ID é representado por '#' (hashtag)

@@ -1,0 +1,14 @@
+Como fazer comentários no seu código JS:
+
+1 - Comentários de uma única linha --> // Comentário em JS
+2 - Comentários com mais de uma linha --> /* Comentário em JS */ 
+
+
+Como fazer comentários no seu código HTML:
+
+1 - Só funciona da seguinte forma --> <!-- Comentário em HTML -->
+
+
+Como fazer comentários no seu código CSS:
+
+1 - Só funciona da seguinte forma --> /* Comentário em CSS */

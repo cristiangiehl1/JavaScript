@@ -1,0 +1,51 @@
+1. OPERADORES RELACIONAIS
+- Maior '>'
+- Menor '<'
+- Maior ou igual '>='
+- Menor ou igual '<='
+- Igual '=='
+- Diferente '!='
+Todos retornam um valor booleano.
+Operadores Relacionais não tem ordem de precedência.
+
+1.1. Operador de igualdade
+'==' verifica se 2 valores são identicos em grandeza sem levar em consideração ao tipo.
+Ex.: 5 == '5' seria True.
+
+1.2. Operador de igualde restrita
+'===' verifica se 2 valores são identicos em grandeza e tipo (string, int, bool etc)
+Ex.: 5 === '5' seria False.
+Ex.: 5 === 5 seria True.
+
+2. OPERADORES LÓGICOS
+2.1. Operador de negação '!' (também conhecida como 'não')
+
+2.2. Operador de conjunção '&&' (também conhecida como 'e')
+- True && True = True
+- True && False = False
+- False && True = False
+- False && False = False
+
+2.3. Operador de disjunção '||' (também conhecida como 'ou')
+- True || True = True
+- True || False = True
+- False || False = True
+- False || False = False
+
+2.4. Ordem de precedência
+1º negação
+2º conjunção
+3º disjunção
+
+3. OPERADOR TERNÁRIO 
+Teste ? True : False
+Exemplo:
+média >= 7.0 ? "Aprovado" : "Reprovado"
+
+
+4. ORDEM GERAL DE PRECEDÊNCIA DOS OPERADORES:
+1º Aritiméticos
+2º Relacionais 
+3º Lógicos
+4º Ternário 
+ 

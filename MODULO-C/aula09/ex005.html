@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p id="ident">Aqui vai o resultado</p>
+    <p name="teste">Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        
+        // fazendo um loop para pasar por todo os elementos da tag name 'p' = parágrafo e escrevendo eles na tela.
+        for (let i = 0; i < window.document.getElementsByTagName('p').length; i++)
+        {
+            let p1 = window.document.getElementsByTagName('p')[i];
+            
+            // inner.Text só copia o texto, já o inner.HTML copia o texto com suas formatações
+            window.document.write('<br>' + 'Está escrito assim: ' + p1.innerText + '<br>')
+            window.document.write(('<br>' + 'Está escrito assim: ' + p1.innerHTML + '<br>'))
+            p1.style.color = 'blue'
+        }
+        
+        // Seleciona o body no documento e muda a cor para preto
+        var corpo = window.document.body
+        corpo.style.background = 'black'        
+
+        // seleciona um elemento pelo seu ID
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        
+        // seleciona um elemento pelo nome
+        var f = window.document.getElementsByName('teste')[0]
+        f.innerText = 'Olá!'
+
+        // maneira mais genérica de selecionar elementos usando seletores CSS.
+        var h = window.document.querySelector('p#ident')
+        h.style.background = 'yellow'
+
+
+        
+        
+        
+        /* var p1 = window.document.getElementsByTagName('p')[0];
+        var p2 = window.document.getElementsByTagName('p')[1];
+
+        window.document.write('<br>' + 'Está escrito assim: ' + p1.innerText + '<br>');
+        window.document.write('Está escrito assim: ' + p2.innerText);
+        */
+
+
+
+    </script>
+</body>
+</html>

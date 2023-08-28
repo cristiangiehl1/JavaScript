@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgb(100, 100, 145);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</div>!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        
+      var n1 = Number(window.prompt("Digite um número: ")); // window.prompt retorna sempre uma string
+      var n2 = Number(window.prompt("Digite outro número: "));
+      var soma = n1 + n2;
+      // var s = soma.toFixed(2).replace('.', ','); fixa em 2 casas decimais e troca o '.' pela ',' 
+      // tambem poderia ser executado o seguinte comando soma.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+      var s = soma.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}); 
+      window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`);  
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+1. EVENTOS DOM:
+- mouseenter
+- mousemove
+- mousedown
+- mouseup
+- click
+- mouseout
